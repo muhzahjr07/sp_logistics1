@@ -36,3 +36,4 @@
 #### 4. Architecture & Security
 - Universal PDO layer with automatic fallback between MySQL and high-concurrency SQLite WAL.
 - CSRF protection, timing-safe token validation, prepared statements, and bcrypt authentication.
+
