@@ -1,10 +1,44 @@
 # Spillburg Logistics 1 — Production Deployment Guide
 
-This guide provides instructions for deploying the **Spillburg Logistics 1** web platform to production hosting environments (cPanel, standard Apache, LiteSpeed, or Nginx).
+This guide provides instructions for deploying the **Spillburg Logistics 1** web platform to production hosting environments (Render Cloud, cPanel, standard Apache, LiteSpeed, or Nginx).
 
 ---
 
-## 1. Hosting Requirements
+## 1. Quick Deploy to Render.com (Recommended Cloud PaaS)
+
+This repository includes a production-ready `Dockerfile` and `render.yaml` specification for zero-config container deployment on Render.
+
+### Step 1: Connect GitHub Repository
+1. Log into your [Render Dashboard](https://dashboard.render.com/).
+2. Click **New +** &rarr; Select **Web Service** (or **Blueprint** to use `render.yaml`).
+3. Connect your GitHub repository: `https://github.com/muhzahjr07/sp_logistics1`.
+
+### Step 2: Configure Web Service
+If setting up manually as a Web Service:
+- **Name**: `spillburg-logistics1`
+- **Language**: `Docker`
+- **Branch**: `main`
+- **Region**: Choose closest to target market (e.g. `Singapore` for Sri Lanka / Asia or `Frankfurt` / `Oregon`).
+- **Plan**: `Free` or `Starter`.
+
+### Step 3: Environment Variables
+Add the following in the **Environment** tab:
+| Key | Value | Notes |
+|---|---|---|
+| `APP_ENV` | `production` | Enables production mode |
+| `APP_DEBUG` | `false` | Disables debug stacktraces |
+| `DB_CONNECTION` | `sqlite` | Uses auto-migrated persistent SQLite or switch to `mysql` |
+| `SITE_CONTACT_EMAIL` | `info@spillburglogistics1.com` | Primary recipient for inquiries |
+| `QUOTE_NOTIFICATIONS_EMAIL` | `info@spillburglogistics1.com` | Destination for RFQ notifications |
+
+*(If connecting to an external cloud MySQL instance like PlanetScale, Aiven, or AWS RDS, set `DB_CONNECTION=mysql` along with `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD`).*
+
+### Step 4: Deploy
+Click **Create Web Service**. Render will automatically build the Docker image, run migrations, and launch Apache.
+
+---
+
+## 2. Hosting Requirements
 
 - **PHP Version**: PHP 8.2 or later (PHP 8.3 recommended).
 - **PHP Extensions**:

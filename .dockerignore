@@ -1,0 +1,9 @@
+.git
+.env
+*.local
+database/*.sqlite
+logs/
+scratch/
+tools/
+prompt - Copy.txt
+*.zip

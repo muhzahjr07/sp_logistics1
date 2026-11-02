@@ -5,6 +5,18 @@
 
 ---
 
+## Visual Preview & Interface Showcase
+
+| Public Homepage | Multimodal Freight Services |
+|:---:|:---:|
+| ![Spillburg Logistics 1 Homepage](docs/screenshots/01-home.png) | ![Freight Services Matrix](docs/screenshots/02-services.png) |
+
+| Interactive RFQ Quotation Engine & Tracking Dockets |
+|:---:|
+| ![Request a Quote Wizard](docs/screenshots/03-quote-wizard.png) |
+
+---
+
 ## 1. Executive Summary
 
 This repository contains the complete, production-ready website and administrative operations console for **Spillburg Logistics 1 (Private) Limited**, designed and engineered from the ground up based on the **Google Stitch** design system export, approved company reference materials, and Sri Lankan maritime logistics operational standards.
@@ -177,7 +189,23 @@ The codebase has undergone automated verification via `tools/php/php.exe` and `s
 
 ---
 
-## 8. License & Commercial Rights
+## 8. Deployment Options
+
+### Deploy to Render (Docker / Web Service)
+This repository is configured for one-click container deployment on [Render](https://render.com) using the included `Dockerfile` and `render.yaml`:
+1. Connect your GitHub repository `muhzahjr07/sp_logistics1` in Render.
+2. Select **Web Service** with the **Docker** runtime.
+3. Configure environment variables:
+   - `APP_ENV=production`
+   - `APP_DEBUG=false`
+   - `DB_CONNECTION=sqlite` (or configure external `mysql`)
+   - `SITE_CONTACT_EMAIL=info@spillburglogistics1.com`
+   - `QUOTE_NOTIFICATIONS_EMAIL=info@spillburglogistics1.com`
+4. Deploy! Refer to [DEPLOYMENT.md](DEPLOYMENT.md) for detailed cPanel, Apache, and Nginx production guides.
+
+---
+
+## 9. License & Commercial Rights
 
 Copyright &copy; 2026 Spillburg Logistics 1 (Private) Limited. All Rights Reserved.  
 All content, design tokens, and source code are proprietary to Spillburg Logistics 1 and the Spillburg Group.
