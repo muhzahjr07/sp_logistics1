@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface": "#f7f9ff",
+          "tertiary": "#170b00",
+          "on-primary-container": "#798ca6",
+          "background": "#f7f9ff",
+          "outline": "#74777d",
+          "primary-fixed-dim": "#b5c8e5",
+          "secondary-fixed": "#cce5ff",
+          "on-primary": "#ffffff",
+          "surface-variant": "#d8e4f2",
+          "on-secondary-fixed": "#001d31",
+          "secondary-fixed-dim": "#9accf8",
+          "surface-bright": "#f7f9ff",
+          "on-tertiary": "#ffffff",
+          "on-background": "#121d27",
+          "primary-fixed": "#d2e4ff",
+          "inverse-primary": "#b5c8e5",
+          "on-tertiary-fixed-variant": "#633f00",
+          "error-container": "#ffdad6",
+          "surface-container-highest": "#d8e4f2",
+          "tertiary-fixed": "#ffddb5",
+          "on-secondary-fixed-variant": "#0a4b71",
+          "on-primary-fixed": "#071c32",
+          "on-secondary": "#ffffff",
+          "secondary-container": "#9fd1fe",
+          "error": "#ba1a1a",
+          "outline-variant": "#c4c6cd",
+          "surface-container-high": "#dee9f8",
+          "tertiary-fixed-dim": "#ffb955",
+          "surface-container": "#e4effd",
+          "surface-container-lowest": "#ffffff",
+          "surface-dim": "#d0dbe9",
+          "on-tertiary-fixed": "#2a1800",
+          "on-surface": "#121d27",
+          "secondary": "#2d638a",
+          "inverse-on-surface": "#e7f2ff",
+          "on-error": "#ffffff",
+          "primary": "#000e1f",
+          "inverse-surface": "#27313c",
+          "surface-container-low": "#edf4ff",
+          "on-error-container": "#93000a",
+          "on-tertiary-container": "#bc7e19",
+          "surface-tint": "#4d6078",
+          "tertiary-container": "#341f00",
+          "primary-container": "#10243a",
+          "on-primary-fixed-variant": "#354860",
+          "on-secondary-container": "#235a81",
+          "on-surface-variant": "#44474d"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "space-2xl": "4rem",
+          "space-xl": "2.5rem",
+          "margin-sm": "1rem",
+          "gutter-sm": "1rem",
+          "margin": "2rem"
+        },
+        "fontFamily": {
+          "label-lg": [
+            "Public Sans"
+          ],
+          "body-sm": [
+            "Public Sans"
+          ],
+          "headline-md": [
+            "Public Sans"
+          ],
+          "technical-code": [
+            "Public Sans"
+          ],
+          "title-md": [
+            "Public Sans"
+          ],
+          "body-lg": [
+            "Public Sans"
+          ],
+          "label-md": [
+            "Public Sans"
+          ],
+          "headline-sm": [
+            "Public Sans"
+          ],
+          "headline-lg-mobile": [
+            "Public Sans"
+          ],
+          "display-xl": [
+            "Public Sans"
+          ],
+          "headline-lg": [
+            "Public Sans"
+          ],
+          "body-md": [
+            "Public Sans"
+          ],
+          "display-xl-mobile": [
+            "Public Sans"
+          ]
+        },
+        "fontSize": {
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "technical-code": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-xl": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-xl-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary py-space-xs"><div class="max-w-7xl mx-auto px-gutter flex items-center justify-between font-technical-code text-technical-code"><div class="flex items-center gap-space-md"><span class="text-on-primary-container uppercase tracking-wider">Part of Spillburg Group</span><span class="text-outline-variant">|</span><a class="text-on-primary hover:text-secondary-fixed transition-colors" href="#">Spillburg Holdings</a><span class="text-outline-variant">|</span><a class="text-on-primary hover:text-secondary-fixed transition-colors" href="#">Corporate Services</a></div><div class="hidden md:flex items-center gap-space-lg"><div class="flex items-center gap-space-xs text-on-primary"><span class="text-on-primary-container">HQ:</span><span>Colombo 01, Sri Lanka</span></div><div class="flex items-center gap-space-xs text-on-primary"><span class="text-on-primary-container">OPS:</span><a class="hover:text-secondary-fixed transition-colors" href="tel:+94112000000">+94 (11) 234-5678</a></div><div class="flex items-center gap-space-xs text-on-primary"><span class="text-on-primary-container">INQ:</span><a class="hover:text-secondary-fixed transition-colors" href="mailto:ops@spillburglogistics1.com">ops@spillburglogistics1.com</a></div></div></div></div><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Spillburg Logistics 1 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wz53Z6aGW-EPgVLULIxs9il6wuL5S9Stx-L0cyUgH2GXFMeY2cx1egrYh2B-jTrQ-lJOuNlsWtvI6rZC8zWmoWR3XHbrm9-r3zEQg5gKOUHCS2V2FTiRoCE3t_wKHXBX5fbJRwrDwfAhNltzAMtkQL2PShjWPh3MimUCXf0aM5Q-4UbktxDtZOF-7hEvCI6H3DBOFddNtbWKXbt64trElRdBdutQ-3Q72sxmfh9QOgLg"/><span class="font-title-md text-title-md text-primary tracking-tight font-bold">Spillburg Logistics 1</span></a></div><nav class="hidden lg:flex items-center gap-space-sm font-label-lg text-label-lg" data-active-classes="bg-surface-container text-primary font-label-lg font-bold rounded"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container text-primary font-label-lg font-bold rounded" data-path="home" href="#">Home</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><div class="relative group"><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center gap-1" data-path="services" href="#">Services</a><div class="absolute left-0 top-full hidden group-hover:block w-64 pt-2"><div class="bg-surface-container-lowest shadow-[0_4px_16px_rgba(16,36,58,0.08)] rounded p-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Sea Freight Forwarding</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Air Freight Coordination</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Road Transport</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Project Cargo Logistics</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Customs &amp; Warehousing</a></div></div></div><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="industries" href="#">Industries</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="process" href="#">Process</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="news-and-insights" href="#">News &amp; Insights</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded hover:bg-tertiary hover:text-on-tertiary transition-colors" data-path="request-a-quote" href="#">Request a Quote</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full -mt-20 overflow-hidden bg-primary-container text-on-primary">
+<!-- Cinematic Logistics Backdrop -->
+<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="Massive deep-sea container ship berthed at deep water port terminal of Colombo during blue hour dusk with towering STS gantry cranes illuminated by industrial spotlights, reflecting against calm oceanic water with stacks of intermodal freight containers in midnight navy and amber tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvrV2DUAFC9qB4Q6bP_8s5_UGLrOOUY-Wlxghc0Dy0aSLtDwBqsYEGzt0XMeQ67-gVByzRiuF9KYNJ9knnzUubDK9beQTYpvvAZc4xnSoqMo7-ojR9rA0kgUlTVtEuHyhmd2CE6G7Jnw95WS2ptJRZnxewvGU1CTItyDzlUqkqrXEhREUG1IA02tFxA-W_REB2kNz-2retrcc7bt7skTo6_oYUdjyFD7cD07oQhTuz')"></div>
+<div class="absolute inset-0 z-10 bg-gradient-to-r from-primary-container/95 via-primary-container/85 to-primary-container/40"></div>
+<div class="absolute inset-0 z-10 bg-gradient-to-t from-primary-container via-transparent to-primary-container/50"></div>
+<div class="relative z-20 max-w-7xl mx-auto px-gutter pt-36 pb-space-2xl flex flex-col justify-between min-h-[640px]">
+<div class="max-w-3xl flex flex-col gap-space-md">
+<!-- Maritime Operations Tag -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest/10 backdrop-blur-md rounded self-start font-technical-code text-technical-code text-secondary-fixed">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span>COLOMBO FREIGHT CORRIDOR • INDIAN OCEAN AXIS</span>
+</div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-primary leading-none">
+          Moving Cargo. <br/>
+<span class="text-tertiary-fixed-dim">Connecting Businesses.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed max-w-2xl">
+          Practical logistics solutions designed to keep cargo moving and businesses connected. Freight forwarding, multi-modal transport, and supply-chain coordination from Sri Lanka's central maritime hub.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="px-space-lg py-space-sm bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-lg text-label-lg rounded hover:bg-tertiary-fixed transition-colors flex items-center gap-space-xs shadow-md" data-path="request-a-quote" href="#">
+<span>Request a Quote</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-space-lg py-space-sm bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary backdrop-blur-md font-label-lg text-label-lg rounded transition-colors flex items-center gap-space-xs" href="#services">
+<span>Explore Our Services</span>
+<span class="material-symbols-outlined text-[18px]">view_timeline</span>
+</a>
+</div>
+</div>
+<!-- Quick Ticker Bar -->
+<div class="mt-space-2xl pt-space-md bg-surface-container-lowest/5 backdrop-blur-sm rounded p-space-md grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col">
+<span class="font-technical-code text-technical-code text-on-primary-container uppercase">Strategic Hub</span>
+<span class="font-headline-sm text-headline-sm text-on-primary">Port of Colombo</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Hub 01 Transshipment</span>
+</div>
+<div class="flex flex-col">
+<span class="font-technical-code text-technical-code text-on-primary-container uppercase">Ocean Freight</span>
+<span class="font-headline-sm text-headline-sm text-on-primary">FCL &amp; LCL Services</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Weekly Guaranteed Sailings</span>
+</div>
+<div class="flex flex-col">
+<span class="font-technical-code text-technical-code text-on-primary-container uppercase">Aviation Cargo</span>
+<span class="font-headline-sm text-headline-sm text-on-primary">Air Expedited</span>
+<span class="font-body-sm text-body-sm text-surface-variant">BIA / CMB Direct Lanes</span>
+</div>
+<div class="flex flex-col">
+<span class="font-technical-code text-technical-code text-on-primary-container uppercase">Specialized</span>
+<span class="font-headline-sm text-headline-sm text-on-primary">Heavy &amp; Project Cargo</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Breakbulk &amp; OOG Certified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. FAST QUOTE & ROUTE EXPLORATION BAR -->
+<section class="w-full relative z-30 -mt-10 px-gutter max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded shadow-xl p-space-md lg:p-space-lg">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-primary self-start lg:self-center">
+<span class="material-symbols-outlined text-[24px] text-secondary">explore</span>
+<span class="font-title-md text-title-md font-bold uppercase tracking-wider">Fast Freight Routing</span>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm w-full lg:w-auto flex-1 max-w-4xl" onsubmit="event.preventDefault();">
+<!-- Origin -->
+<div class="flex flex-col gap-1">
+<label class="font-technical-code text-technical-code text-on-surface-variant uppercase">Origin Port / CFS</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-outline">location_on</span>
+<input class="w-full pl-8 pr-2 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:bg-surface-container-lowest" placeholder="Origin city or port" type="text" value="Colombo Port (LKCMB)"/>
+</div>
+</div>
+<!-- Destination -->
+<div class="flex flex-col gap-1">
+<label class="font-technical-code text-technical-code text-on-surface-variant uppercase">Destination Port</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-outline">flag</span>
+<input class="w-full pl-8 pr-2 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:bg-surface-container-lowest" placeholder="e.g. Rotterdam (NLRTM)" type="text"/>
+</div>
+</div>
+<!-- Mode -->
+<div class="flex flex-col gap-1">
+<label class="font-technical-code text-technical-code text-on-surface-variant uppercase">Transit Mode</label>
+<div class="relative">
+<select class="w-full px-3 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:bg-surface-container-lowest appearance-none">
+<option>Ocean - FCL Full Container</option>
+<option>Ocean - LCL Consolidation</option>
+<option>Air Freight Priority</option>
+<option>Multimodal Rail &amp; Sea</option>
+<option>Project / Out of Gauge</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="flex flex-col justify-end">
+<button class="w-full py-2.5 px-space-md bg-primary-container text-on-primary font-label-lg text-label-lg rounded hover:bg-primary transition-colors flex items-center justify-center gap-space-xs" type="submit">
+<span>Start B2B Quote</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 3. CORE SERVICES GRID (Editorial & Functional) -->
+<section class="w-full py-space-2xl px-gutter max-w-7xl mx-auto" id="services">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-technical-code text-technical-code text-secondary font-bold uppercase tracking-widest">Capabilities &amp; Operations</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Structured Freight Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Engineered multi-modal logistics built for industrial speed, regulatory transparency, and total shipment visibility across vital global maritime channels.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm font-technical-code text-technical-code text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>ACTIVE FLEET &amp; CARRIER ALLIANCES: 34+</span>
+</div>
+</div>
+<!-- 6-Card High Density Responsive Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- 1. Ocean Freight Forwarding -->
+<div class="bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow p-space-md flex flex-col justify-between group">
+<div>
+<div class="relative h-48 rounded overflow-hidden mb-space-md">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A commercial cargo ship loaded with multi-colored freight containers sailing across open deep blue ocean waters under bright clear daylight with ocean spray at the bow." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1gb3tbIsv7En89alBhmyYIgFboA6ycYuegYQvgqnNpHHZ5lFKimjuMIg7k1sUH0PZ4cm5Ldcn4x6PqAD06J6zIAD59mN-Qc4a8fKz_aJL9BImwMqFfxxzsmPH5GEUGfhSEwj_4LW_m-1N4vcUHZymKl0jbIR8HFZjrpBq9fmScHbpkRbclFjIt8Q_R4O2-Af2rhkOmeyYETtqfDSLX6mUEI4LStYFf3Z42lVhdbKw')"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-primary-container text-on-primary font-technical-code text-technical-code rounded">FCL / LCL</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[18px]">directions_boat</span>
+<span>OCEAN FREIGHT</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Sea Freight Forwarding</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Full Container Load (FCL) and Less than Container Load (LCL) consolidation connecting Colombo directly with major transshipment lanes across Europe, Far East, and the Americas.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b flex items-center justify-between">
+<span class="font-technical-code text-technical-code text-outline">TIER 1 CARRIER CONTRACTS</span>
+<a class="font-label-md text-label-md text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" data-path="services" href="#">
+            Details <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 2. Air Cargo Coordination -->
+<div class="bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow p-space-md flex flex-col justify-between group">
+<div>
+<div class="relative h-48 rounded overflow-hidden mb-space-md">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Wide-body cargo airplane parked on airport tarmac at sunset, with ground crew loading heavy freight pallets into the main deck cargo door using high-lift loader." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTdzUUWIaUE5Ge35WJa9X_UPYMF89OijYIuJ-pd4EZb8QuJO1secbr_i5zDwf-qdatSjCcFCZ_8M7oOWIevnUHAoPdOqKdvpR2-2c_uRTICusH_Vb7BsDYxd8mMg4YE690vmVmeJNLb8xAU73bgVyEuWHuCFlYUkjueO1JGoxWzQdUxuOG7FC7fvp7n6Rvw2tyLiQ9dcv3Vu5_rNS_k_lD4dCYWE0wdMVC4R5BSvSP')"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-primary-container text-on-primary font-technical-code text-technical-code rounded">TIME-CRITICAL</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[18px]">flight_takeoff</span>
+<span>AIR EXPEDITED</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Air Cargo Coordination</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Priority air cargo space allocation for perishable goods, high-value electronics, and emergency manufacturing spares through Bandaranaike International Airport (CMB).
+          </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b flex items-center justify-between">
+<span class="font-technical-code text-technical-code text-outline">IATA ALLIANCE SPACES</span>
+<a class="font-label-md text-label-md text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" data-path="services" href="#">
+            Details <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 3. Road & Inland Freight -->
+<div class="bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow p-space-md flex flex-col justify-between group">
+<div>
+<div class="relative h-48 rounded overflow-hidden mb-space-md">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Modern heavy-duty transport prime mover truck carrying a 40-foot shipping container along a modern coastal highway with bridge viaducts in clear industrial daylight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgCewH2bJBRrjd6L3x1tYHyVXuueu9K6CklEWc1NqhgoZvd9qQ5MQNIEO5r6-ILgs6uZcP9JEmVbzWKstK7UBoSk9TZ-7xjqqseHJhPWLsu81CcgA5BFOF0jm8z1jXZVyN17WFLAn6NgG7etv63Dw9jqNi-rzFDLeyPqJAaUPZ_2-K-1atmUTB7njBp7TJnVYANqlr63uuT9SnIQvVlOPJBRij_BpIEADI_jLoN3g0')"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-primary-container text-on-primary font-technical-code text-technical-code rounded">ISLAND-WIDE</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+<span>ROAD TRANSPORT</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Road &amp; Inland Freight</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Container drayage and point-to-point inland haulage across Sri Lanka. Direct line transport between export manufacturing zones, regional factories, and the Port of Colombo.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b flex items-center justify-between">
+<span class="font-technical-code text-technical-code text-outline">GPS MONITORED FLEET</span>
+<a class="font-label-md text-label-md text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" data-path="services" href="#">
+            Details <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 4. Project Cargo & Heavy Lift -->
+<div class="bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow p-space-md flex flex-col justify-between group">
+<div>
+<div class="relative h-48 rounded overflow-hidden mb-space-md">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Heavy lift mobile crane rig hoisting an industrial turbine onto specialized low-bed multi-axle trailer in a dedicated port cargo staging yard with safety supervisors." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfAhqcVLvVB--RNfJuluO06QoddWCGmHKpCIGmGjzNQDPQZ4xSG_YO53VGXkI6bhN84H6IpnF72txXRKyikYXNKz_MELl6IWjwb8ygwNcUSMLmr-5uB4yfUu-qNGYpJhImn3Tbp69Bfg1Nikwsd0253S1BGnB6tKpXyZc-bgitK0CJ2tS5tj1Sg8LAkKkaVuzPf0FaDvjFP_brcZ-mILNOD9gKuyoxJRMwIWjBPopp')"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-technical-code text-technical-code rounded">BREAKBULK</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+<span>PROJECT FREIGHT</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Project Cargo &amp; Heavy Lift</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Specialized engineering logistics for out-of-gauge (OOG) machinery, power plant components, civil infrastructure, and heavy plant equipment across difficult maritime corridors.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b flex items-center justify-between">
+<span class="font-technical-code text-technical-code text-outline">ROUTE SURVEYS &amp; PERMITTING</span>
+<a class="font-label-md text-label-md text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" data-path="services" href="#">
+            Details <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 5. Warehousing & Staging -->
+<div class="bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow p-space-md flex flex-col justify-between group">
+<div>
+<div class="relative h-48 rounded overflow-hidden mb-space-md">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Modern high-ceiling industrial logistics distribution warehouse with high bay steel racking, automated forklift handling palletized shrink-wrapped commercial inventory." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDc5erAlqdIwZs34SWKKXOghbcq9cK24NjSGIgud_y7-7jt_luDAAROqColeqbzVj6kwRElCmPc81x3kVbI70SGHf1NVNks5GfIbFDJGjS49jjaMbyt-vrk3eqLysCNpbUkf-by7YLzE-Oz50-MHuAQ1IuegCxBKPGxU_vpkSPdLUp4bAcAyzsUvV1VD7GWeNFVfeN8N7yxovEJQM63hhB_tMXwe375VDNuvLYGOo1u')"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-primary-container text-on-primary font-technical-code text-technical-code rounded">STORAGE &amp; CFS</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[18px]">warehouse</span>
+<span>WAREHOUSING</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Warehousing &amp; Inventory Staging</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Bonded and general warehousing solutions near Colombo port. Container de-stuffing, secure multi-tier pallet racking, cargo inspection, and rapid cross-docking hubs.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b flex items-center justify-between">
+<span class="font-technical-code text-technical-code text-outline">BONDED &amp; FREEPORT HUB</span>
+<a class="font-label-md text-label-md text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" data-path="services" href="#">
+            Details <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 6. Customs Brokerage Coordination -->
+<div class="bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow p-space-md flex flex-col justify-between group">
+<div>
+<div class="relative h-48 rounded overflow-hidden mb-space-md">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Logistics customs official reviewing import export bills of lading manifests with digital tablet in front of cargo terminal checkpoint office." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFQCfsRZqwZHo2-xlhq3hBdK96fZLoc_GwE1XM7hSWvSy3--GKa0qZyLqrBblfT068tSuBdBtuohwTCmIrYPwdRC6kDIX-qD0rm1Ry-4P0Kc3d5Pu2oRMuuSSAGdtmC3MnDXqb9ZL_7qGybM_GmFUZQSkrcMIUi7--e8I0rv1UhKmMEr_1LJqJMSL1GUtcUyn2sOXMrmi_rb3l5biq-uvIRMs3ufZY29s2Igo0KAgQ')"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-primary-container text-on-primary font-technical-code text-technical-code rounded">CLEARANCE</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs font-technical-code text-technical-code">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>REGULATORY</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Customs Brokerage Coordination</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Complete management of Sri Lanka Customs documentation, HS code tariff optimization, import/export permits, BOI approvals, and expedited green-channel clearance.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/50 -mx-space-md -mb-space-md px-space-md py-space-sm rounded-b flex items-center justify-between">
+<span class="font-technical-code text-technical-code text-outline">BOI &amp; CUSTOMS LICENSED</span>
+<a class="font-label-md text-label-md text-secondary group-hover:text-primary transition-colors flex items-center gap-0.5" data-path="services" href="#">
+            Details <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. WHY CHOOSE SPILLBURG LOGISTICS 1 (Value Pillars) -->
+<section class="w-full bg-surface-container-low py-space-2xl">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col gap-space-xs mb-space-xl max-w-2xl">
+<span class="font-technical-code text-technical-code text-secondary font-bold uppercase tracking-widest">Operational Assurances</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Built on Execution Precision</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          In international supply chains, uncertainty produces costly demurrage and delayed plant schedules. We structure reliability directly into every leg of carriage.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">schedule</span>
+</div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">PILLAR 01</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">On-Time Execution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Systematic feeder vessel synchronization and cut-off milestone surveillance ensure your cargo never sits stranded on Colombo wharfs.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+            &gt; 98.4% ON-TIME SCHEDULE METRIC
+          </div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">visibility</span>
+</div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">PILLAR 02</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">Transparent Multi-Leg Info</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              No obscured carrier blind spots. Clear milestone updates at berth, customs release, transshipment loading, and final CFS devanning.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+            AUTOMATED DAILY DISPATCH LOGS
+          </div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">anchor</span>
+</div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">PILLAR 03</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">Colombo Port Leverage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Direct presence and established relationships within JCT, CICT, and SAGT terminals enable rapid berth coordination and terminal gate bypass.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+            24/7 DOCK-SIDE ATTENDANCE
+          </div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">PILLAR 04</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">Dedicated Key Account Desk</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              A single senior freight manager assigned directly to your account. No offshore call centers, ticketing queues, or impersonal automation.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+            DIRECT ESCALATION DESK
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. INTERACTIVE LOGISTICS PROCESS TIMELINE -->
+<section class="w-full py-space-2xl px-gutter max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-technical-code text-technical-code text-secondary font-bold uppercase tracking-widest">End-to-End Governance</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Our Structured Five-Step Process</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        A disciplined lifecycle designed to eliminate shipping demurrage, verify trade compliance, and guarantee prompt consignee handovers.
+      </p>
+</div>
+<!-- Timeline Stepper -->
+<div class="relative grid grid-cols-1 md:grid-cols-5 gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded p-space-md flex flex-col relative shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-xl text-headline-md font-bold text-surface-container-highest">01</span>
+<span class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-technical-code text-technical-code">STEP</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Requirement Assessment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Evaluation of cargo volume, packing specifications, hazardous classifications (IMDG), target arrival timelines, and commercial Incoterms.
+        </p>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-secondary">
+          ✓ CARGO DENSITY CHECK
+        </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded p-space-md flex flex-col relative shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-xl text-headline-md font-bold text-surface-container-highest">02</span>
+<span class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-technical-code text-technical-code">STEP</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Multi-Modal Planning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Optimized carrier route selection balancing sea-transit duration vs. vessel schedule integrity. Allocation of vessel slots and container equipment.
+        </p>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-secondary">
+          ✓ ROUTE MATRIX SELECTION
+        </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded p-space-md flex flex-col relative shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-xl text-headline-md font-bold text-surface-container-highest">03</span>
+<span class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-technical-code text-technical-code">STEP</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Dispatch &amp; Clearance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Factory collection, terminal gate entry, Sri Lanka Customs physical/document examination, draft B/L issuance, and vessel loading supervision.
+        </p>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-secondary">
+          ✓ EDI MANIFEST FILING
+        </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest rounded p-space-md flex flex-col relative shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-xl text-headline-md font-bold text-surface-container-highest">04</span>
+<span class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-technical-code text-technical-code">STEP</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Proactive Tracking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Live vessel AIS monitoring, transshipment port transfer verification, and advance notification of ETA adjustments directly to your operations desk.
+        </p>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-secondary">
+          ✓ REAL-TIME AIS TRACKING
+        </div>
+</div>
+<!-- Step 5 -->
+<div class="bg-surface-container-lowest rounded p-space-md flex flex-col relative shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-xl text-headline-md font-bold text-surface-container-highest">05</span>
+<span class="w-8 h-8 rounded bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-technical-code text-technical-code">FINAL</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Final Mile Handover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Destination port de-vanning, destination customs liaison, drayage transport, and Proof of Delivery (POD) execution with digital bill surrender.
+        </p>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-secondary">
+          ✓ SIGNED DIGITAL POD
+        </div>
+</div>
+</div>
+</section>
+<!-- 6. STRATEGIC HUB SHOWCASE: "SRI LANKA: THE MARITIME CROSSROADS" -->
+<section class="w-full bg-primary-container text-on-primary py-space-2xl overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-gutter relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text & Narrative -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest/10 backdrop-blur-md rounded self-start font-technical-code text-technical-code text-tertiary-fixed-dim">
+<span>GEO-STRATEGIC ADVANTAGE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+            Sri Lanka: The Maritime Crossroads of South Asia
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed">
+            Positioned just 10 nautical miles off the main East-West sea lanes, Sri Lanka commands the principal international shipping corridor between the Far East, Europe, and the Americas.
+          </p>
+<div class="grid grid-cols-2 gap-space-md pt-space-sm">
+<div class="p-space-md bg-surface-container-lowest/5 rounded">
+<span class="font-headline-md text-headline-md font-bold text-tertiary-fixed-dim">10 NM</span>
+<p class="font-body-sm text-body-sm text-primary-fixed mt-1">Deviation from global trunk shipping route, reducing feeder detour times.</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest/5 rounded">
+<span class="font-headline-md text-headline-md font-bold text-tertiary-fixed-dim">70%+</span>
+<p class="font-body-sm text-body-sm text-primary-fixed mt-1">Transshipment share of regional Indian subcontinent oceanic trade.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-sm font-technical-code text-technical-code text-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">check_circle</span>
+<span>Direct connectivity to Nhava Sheva, Mundra, Chennai, Tuticorin, and Chittagong</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">check_circle</span>
+<span>Ultra-deep container berths capable of servicing 24,000+ TEU mega vessels</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">check_circle</span>
+<span>Free Trade Zone &amp; Multi-Country Consolidation (MCC) hub operations</span>
+</div>
+</div>
+</div>
+<!-- Maritime Visual & Hub Topology -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="relative rounded overflow-hidden shadow-2xl bg-surface-container-lowest/5">
+<div class="h-80 w-full bg-cover bg-center" data-alt="Technical maritime route map chart showing maritime shipping lanes passing through Indian ocean connecting Colombo Port with Singapore, Dubai, Rotterdam, and Mumbai with clean graphical navigation lines and data badges." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDN_bIXJNq7HnAK8cp7y9qJelZshef9-7dMo2k3bqYK2zYpGZnGnC-793kFl8DTIfMvhxdvZ247R-XCOwPp7Ji6xWfuE8H_ECMndqpFBH4AQ3an39UJyb1eKW2u5fr4hTss9r9eXsXhocAhwfxFu7v0GxJ5CdcjMrrFyjch4asZpYcA5x5sVAQxpVLj8Cxp-gowNkp-D9_uobUbuQwbHWPB8K3uGGieZN_snHEqr9a7')"></div>
+<!-- Live Status Overlay -->
+<div class="p-space-md bg-surface-container-lowest/10 backdrop-blur-md flex items-center justify-between font-technical-code text-technical-code">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span class="text-on-primary">PORT OF COLOMBO: OPERATING NORMAL</span>
+</div>
+<span class="text-secondary-fixed">DRAFT: 18.0M DEEPWATER</span>
+</div>
+</div>
+<!-- Quick Hub Data Strip -->
+<div class="p-space-md bg-surface-container-lowest/5 rounded flex items-center justify-between font-technical-code text-technical-code text-primary-fixed">
+<span>SAGT / CICT / JCT TERMINAL ACCESS</span>
+<span class="text-tertiary-fixed-dim">24/7 VESSEL BERTHING</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. TARGET INDUSTRIES GRID -->
+<section class="w-full py-space-2xl px-gutter max-w-7xl mx-auto">
+<div class="flex flex-col gap-space-xs mb-space-xl max-w-2xl">
+<span class="font-technical-code text-technical-code text-secondary font-bold uppercase tracking-widest">Sector Experience</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Tailored Logistics for Core Industries</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Each cargo type carries unique risks, regulatory constraints, and handling requirements. We deploy industry-specific protocols to ensure cargo integrity.
+      </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Industry 1: Manufacturing & Apparel -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="h-36 rounded overflow-hidden mb-space-md bg-cover bg-center" data-alt="Industrial textile manufacturing warehouse with packaged apparel cartons stacked for overseas retail export loading on freight pallets." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB50Nbhp-DDPKg35XOKb2WbS7q_ZfnJhRVZFhUR75ybp3Iat4LZf6JJ6ICDy85WSgZzZn06Ax5frLYopTeC7gd5Pq0zmInbkZs3eXr1GZUaozvwi_mLYEMfZZ7Pl0DLqyE6OWUNvL_wZXA1j7lEU0VdlB7dLoSYc1ETf02-ZYPfYOiXt3_Sb6DpOrTEpYNxwdP5jQCFTJoXk8sGG5c8oKMyV6mY3wTYPuPpkRjZn5-e')"></div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">MANUFACTURING</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">Apparel &amp; Textiles</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Strict garment-on-hanger (GOH) containers, expedited fashion season timelines, and just-in-time raw fabric import management for BOI factories.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+          GOH &amp; BOI EXPEDITED
+        </div>
+</div>
+<!-- Industry 2: Retail & FMCG -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="h-36 rounded overflow-hidden mb-space-md bg-cover bg-center" data-alt="Organized modern fast moving consumer goods inventory distribution depot with automated labeling and shrink wrapped consumer cartons." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjIN_wHZ47GPHRN7uJg4OREJKKMx76EkiolD-J71gnVc7vcWx_40sgls4cII4tyiQL9zdxTrdzdX0A0xnyW9HDs0zcN9yj2hfMK3KHRvXdF-FdVKK1PV-Kb5yHGyNbZZDofhWNlfYaPqxab_k5WEyOlBBYu8grvn_GvWo5XFSxs5ffeNie3VYyiOrug2oPyVfHewGO-8qErL2X65E4_npnMWLwBNqO1mVioxRZ_6PU')"></div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">COMMERCE</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">Retail &amp; FMCG</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Rapid replenishment inventory staging, SKUs sorting, batch customs clearances, and store-door delivery coordination across consumer retail networks.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+          HIGH-VELOCITY ROTATION
+        </div>
+</div>
+<!-- Industry 3: Construction & Infrastructure -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="h-36 rounded overflow-hidden mb-space-md bg-cover bg-center" data-alt="Large construction infrastructure staging site with heavy steel beams, reinforced structural piping and heavy civil engineering machinery ready for transport." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXsl3FEg60qLb7rx4Yrfsp3o3kyIENYt9fdg1bqtAviPrKZQNIYpudcLiqKHJeLck999CgUprBZEACBHn1mlvuJYuEXHvGD0dreSXXAq-mVAvv7o-5yQWE5EIR4RniNkWP69_p-xnwq5Q_UFW1keg1_Qafxge8tlTAPmd9XW3yJJgl6uw8GnSV4wA5sWx5xkqrPSin_0XtvONgMmV_lwHO6jc1bJQvlTUpqOycsqvc')"></div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">INFRASTRUCTURE</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">Construction Materials</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Heavy steel shipments, bulk cement clinker, earthmoving machinery transit, and scheduled job-site drop-offs with heavy-lift coordination.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+          HEAVY TONNAGE PERMITTED
+        </div>
+</div>
+<!-- Industry 4: Agricultural Exports & Perishables -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="h-36 rounded overflow-hidden mb-space-md bg-cover bg-center" data-alt="Modern cold chain refrigerated shipping containers reefers lined up in a port terminal with temperature monitoring cables connected." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdFDzXNkGj07YC1wy7tQYZXuju8ZR0JzFAAsN5KfMLMBxOp8A9r5dGHdfPIjDRoycmeoq59AzA3zH4_E2sl-9dEDsMOtoXcojsNk2WVOp6CMnlStQdD1gculf-OIeQ1ePpR9F5Ac9AxBEoAg3n2Cp9kPcHX75yKGHSTm346vEkoxhFh7KQJh6hq_9cxr2tuLnM2OuAOZFh1eqImt3m4vm_Fa70Jgz1uCNrTXLtyJEp')"></div>
+<span class="font-technical-code text-technical-code text-secondary font-bold">PERISHABLES</span>
+<h3 class="font-title-md text-title-md text-primary mt-1 mb-space-xs">Agri Exports &amp; Reefers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ceylon tea, spices, coconut derivatives, and temperature-monitored refrigerated container (Reefer) logistics with cold-chain tracking.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-technical-code text-technical-code text-outline">
+          REEFER COLD-CHAIN MONITORED
+        </div>
+</div>
+</div>
+</section>
+<!-- 8. QUOTE CTA BANNER -->
+<section class="w-full px-gutter max-w-7xl mx-auto mb-space-2xl">
+<div class="bg-primary rounded p-space-lg lg:p-space-2xl text-on-primary flex flex-col lg:flex-row items-center justify-between gap-space-xl shadow-xl relative overflow-hidden">
+<!-- Subtle Decorative Ocean Silhouette -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-2xl flex flex-col gap-space-xs z-10">
+<span class="font-technical-code text-technical-code text-tertiary-fixed-dim uppercase tracking-wider font-bold">IMMEDIATE FREIGHT COORDINATION</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+          Ready to optimize transit times &amp; ocean shipping rates?
+        </h2>
+<p class="font-body-md text-body-md text-surface-variant">
+          Speak with our Colombo operations desk to evaluate rate sheets, confirm scheduled feeder vessel cut-offs, or arrange end-to-end multi-modal routing.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md z-10 w-full lg:w-auto">
+<div class="flex flex-col items-center sm:items-start">
+<span class="font-technical-code text-technical-code text-primary-fixed-dim uppercase">DIRECT DESK HOTLINE</span>
+<a class="font-headline-sm text-headline-sm font-bold text-on-primary hover:text-tertiary-fixed-dim transition-colors" href="tel:+94112345678">
+            +94 (11) 234-5678
+          </a>
+</div>
+<a class="w-full sm:w-auto px-space-lg py-space-sm bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-lg text-label-lg rounded hover:bg-tertiary-fixed transition-colors flex items-center justify-center gap-space-xs whitespace-nowrap shadow-md" data-path="request-a-quote" href="#">
+<span>Discuss Your Shipment</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 9. NEWS & LOGISTICS UPDATES -->
+<section class="w-full pb-space-2xl px-gutter max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-technical-code text-technical-code text-secondary font-bold uppercase tracking-widest">Market Intelligence</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Port &amp; Trade Advisories</h2>
+</div>
+<a class="font-label-lg text-label-lg text-secondary hover:text-primary transition-colors flex items-center gap-1" data-path="news-and-insights" href="#">
+<span>View all operational bulletins</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Article 1 -->
+<article class="bg-surface-container-lowest rounded p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="h-44 rounded overflow-hidden mb-space-md bg-cover bg-center" data-alt="Aerial view of Colombo commercial deep-water harbor with container terminals and cargo vessels under clear bright morning weather." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOhdU-UQuVkPEVTFDYyNxyHZPN4NsA_CBBbjIxhuasl2kDUYiSrSFhdvoZezAOwEquTr5NHScxmrpCg9c0XfpvtC6HLAKuTM5qahoT_LXVYlIE8pYiLV748sBGzBJSWGhAjzy-DAKFSnFtyUES8f8LCInFcstdL8Nt5PWotaIPqEGCR1WOzuB4IT-N_SGXL5Dk9kXn7T7gxkfAvVUhy21846uZie_GXLQEVn9S189V')"></div>
+<div class="flex items-center justify-between text-outline mb-space-xs font-technical-code text-technical-code">
+<span>PORT ADVISORY</span>
+<span>OCT 24, 2025</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs hover:text-secondary transition-colors">
+<a data-path="news-and-insights" href="#">Colombo Port JCT Phase IV Expansion: Berth Deepening &amp; Feeder Turnaround</a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Key operational updates on dredging operations improving draft capacities for post-Panamax carriers at the Jaya Container Terminal.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span>Read bulletin</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-container-lowest rounded p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="h-44 rounded overflow-hidden mb-space-md bg-cover bg-center" data-alt="Technical maritime route chart highlighting the Red Sea and Suez canal bypass routes around Cape of Good Hope with transit day calculations." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwiglIp8CVLtawafOU5ag2G0RYv1tQrlqYuUo7lztqotvff_TOAxSLxulTXnpvRj5NZ3DFAi2fPvklq4981Y5HC9ECEhM_VWp931xoWTcysSMMOpACxn4FW1JltcEN1wryKH8u6wpxKRKcNU5w0jcQixaBE0T5i05LWZUfs6PF-Fg4FPEHeWnfYcOkwEZCQo_ulhjG2EiPh04hbV3YrceZFMSpznhkP9kUUPA7WDDH')"></div>
+<div class="flex items-center justify-between text-outline mb-space-xs font-technical-code text-technical-code">
+<span>TRADE ROUTE ANALYSIS</span>
+<span>OCT 18, 2025</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs hover:text-secondary transition-colors">
+<a data-path="news-and-insights" href="#">Indian Ocean &amp; Cape Route Transit Time Variations for Q4 2025</a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Comprehensive assessment of average sea transit durations between Sri Lankan ports and Northern European container terminals.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span>Read bulletin</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-container-lowest rounded p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="h-44 rounded overflow-hidden mb-space-md bg-cover bg-center" data-alt="Logistics broker using paperless digital customs clearing software at commercial port terminal desk." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANZTtFjNN95JH6vsZT6iUe1fRzN_xeegHZ-LkhYOpbYT7_nCGP-lh7cSFlLFc5_Idb3RdQRYUTwoSMyVGZxt2YbXfBShDwVfx3PoYglS5We5zq4o9dxWy8eqYEf1X8l7h28VHngT3olqh-sGIyZp7XWhljh8Rsc4pKc6HoPENXT7JTSbNNupxOcoTsnEjoXsrp7LsxylULKqR7ExxITZRsPEArV-oVPOutFgcp3GdA')"></div>
+<div class="flex items-center justify-between text-outline mb-space-xs font-technical-code text-technical-code">
+<span>REGULATORY COMPLIANCE</span>
+<span>OCT 10, 2025</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs hover:text-secondary transition-colors">
+<a data-path="news-and-insights" href="#">Digital Automated Manifest Declaration Mandate: Sri Lanka Customs Update</a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Guidelines for exporters on the mandatory electronic pre-arrival documentation requirements effective across all commercial marine ports.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span>Read bulletin</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</div>
+</article>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low pt-space-2xl pb-space-lg"><div class="max-w-7xl mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Spillburg Logistics 1 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wz53Z6aGW-EPgVLULIxs9il6wuL5S9Stx-L0cyUgH2GXFMeY2cx1egrYh2B-jTrQ-lJOuNlsWtvI6rZC8zWmoWR3XHbrm9-r3zEQg5gKOUHCS2V2FTiRoCE3t_wKHXBX5fbJRwrDwfAhNltzAMtkQL2PShjWPh3MimUCXf0aM5Q-4UbktxDtZOF-7hEvCI6H3DBOFddNtbWKXbt64trElRdBdutQ-3Q72sxmfh9QOgLg"/><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Spillburg Logistics 1</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Practical logistics solutions designed to keep cargo moving and businesses connected. Premier multi-hub freight management based in Colombo.</p><div class="flex flex-col gap-space-xs font-technical-code text-technical-code text-on-surface-variant pt-space-sm"><span class="font-bold text-primary">MEMBER OF SPILLBURG GROUP</span><span>Licensed Multimodal Transport Operator (MTO) &amp; Customs Broker</span><span>Port of Colombo Freight Hub Facility</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Services</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Sea Freight Forwarding</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Air Cargo Coordination</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Overland Transport</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Project Cargo Logistics</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Warehousing &amp; Distribution</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Customs Clearance Coordination</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Target Industries</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Manufacturing</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Retail &amp; Wholesale</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Construction &amp; Infrastructure</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Project Cargo Sector</a></div><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider pt-space-sm">Company &amp; Governance</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">About Us</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="process" href="#">Operational Principles</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">QHSE &amp; Safety Policy</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">Spillburg Group Affiliation</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="contact" href="#">Careers</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Sri Lanka Operations</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span>Port of Colombo Logistics Zone</span><span>No. 12 Fort Commercial Precinct</span><span>Colombo 00100, Sri Lanka</span><span class="pt-space-xs text-primary font-bold">Desk: +94 (11) 234-5678</span><span class="text-primary font-bold">24/7 Ops: +94 (77) 123-4567</span><span>Email: ops@spillburglogistics1.com</span><span>Mon - Fri: 08:30 - 17:30 IST</span><span class="text-secondary font-medium">24/7 Berthing &amp; Air Cargo Dispatch</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-technical-code text-technical-code text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>© 2025 Spillburg Logistics 1 (Pvt) Ltd. All rights reserved.</span></div><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="contact" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="contact" href="#">Terms of Carriage</a><a class="hover:text-primary transition-colors" data-path="about-us" href="#">Spillburg Holdings Corporate</a></div></div></div></footer></body></html>

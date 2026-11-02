@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /config/
+Disallow: /database/
+Disallow: /logs/
+
+Sitemap: https://www.spillburglogistics1.com/sitemap.xml

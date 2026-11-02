@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface": "#f7f9ff",
+          "tertiary": "#170b00",
+          "on-primary-container": "#798ca6",
+          "background": "#f7f9ff",
+          "outline": "#74777d",
+          "primary-fixed-dim": "#b5c8e5",
+          "secondary-fixed": "#cce5ff",
+          "on-primary": "#ffffff",
+          "surface-variant": "#d8e4f2",
+          "on-secondary-fixed": "#001d31",
+          "secondary-fixed-dim": "#9accf8",
+          "surface-bright": "#f7f9ff",
+          "on-tertiary": "#ffffff",
+          "on-background": "#121d27",
+          "primary-fixed": "#d2e4ff",
+          "inverse-primary": "#b5c8e5",
+          "on-tertiary-fixed-variant": "#633f00",
+          "error-container": "#ffdad6",
+          "surface-container-highest": "#d8e4f2",
+          "tertiary-fixed": "#ffddb5",
+          "on-secondary-fixed-variant": "#0a4b71",
+          "on-primary-fixed": "#071c32",
+          "on-secondary": "#ffffff",
+          "secondary-container": "#9fd1fe",
+          "error": "#ba1a1a",
+          "outline-variant": "#c4c6cd",
+          "surface-container-high": "#dee9f8",
+          "tertiary-fixed-dim": "#ffb955",
+          "surface-container": "#e4effd",
+          "surface-container-lowest": "#ffffff",
+          "surface-dim": "#d0dbe9",
+          "on-tertiary-fixed": "#2a1800",
+          "on-surface": "#121d27",
+          "secondary": "#2d638a",
+          "inverse-on-surface": "#e7f2ff",
+          "on-error": "#ffffff",
+          "primary": "#000e1f",
+          "inverse-surface": "#27313c",
+          "surface-container-low": "#edf4ff",
+          "on-error-container": "#93000a",
+          "on-tertiary-container": "#bc7e19",
+          "surface-tint": "#4d6078",
+          "tertiary-container": "#341f00",
+          "primary-container": "#10243a",
+          "on-primary-fixed-variant": "#354860",
+          "on-secondary-container": "#235a81",
+          "on-surface-variant": "#44474d"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "space-2xl": "4rem",
+          "space-xl": "2.5rem",
+          "margin-sm": "1rem",
+          "gutter-sm": "1rem",
+          "margin": "2rem"
+        },
+        "fontFamily": {
+          "label-lg": [
+            "Public Sans"
+          ],
+          "body-sm": [
+            "Public Sans"
+          ],
+          "headline-md": [
+            "Public Sans"
+          ],
+          "technical-code": [
+            "Public Sans"
+          ],
+          "title-md": [
+            "Public Sans"
+          ],
+          "body-lg": [
+            "Public Sans"
+          ],
+          "label-md": [
+            "Public Sans"
+          ],
+          "headline-sm": [
+            "Public Sans"
+          ],
+          "headline-lg-mobile": [
+            "Public Sans"
+          ],
+          "display-xl": [
+            "Public Sans"
+          ],
+          "headline-lg": [
+            "Public Sans"
+          ],
+          "body-md": [
+            "Public Sans"
+          ],
+          "display-xl-mobile": [
+            "Public Sans"
+          ]
+        },
+        "fontSize": {
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "technical-code": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-xl": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-xl-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary py-space-xs"><div class="max-w-7xl mx-auto px-gutter flex items-center justify-between font-technical-code text-technical-code"><div class="flex items-center gap-space-md"><span class="text-on-primary-container uppercase tracking-wider">Part of Spillburg Group</span><span class="text-outline-variant">|</span><a class="text-on-primary hover:text-secondary-fixed transition-colors" href="#">Spillburg Holdings</a><span class="text-outline-variant">|</span><a class="text-on-primary hover:text-secondary-fixed transition-colors" href="#">Corporate Services</a></div><div class="hidden md:flex items-center gap-space-lg"><div class="flex items-center gap-space-xs text-on-primary"><span class="text-on-primary-container">HQ:</span><span>Colombo 01, Sri Lanka</span></div><div class="flex items-center gap-space-xs text-on-primary"><span class="text-on-primary-container">OPS:</span><a class="hover:text-secondary-fixed transition-colors" href="tel:+94112000000">+94 (11) 234-5678</a></div><div class="flex items-center gap-space-xs text-on-primary"><span class="text-on-primary-container">INQ:</span><a class="hover:text-secondary-fixed transition-colors" href="mailto:ops@spillburglogistics1.com">ops@spillburglogistics1.com</a></div></div></div></div><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Spillburg Logistics 1 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wz53Z6aGW-EPgVLULIxs9il6wuL5S9Stx-L0cyUgH2GXFMeY2cx1egrYh2B-jTrQ-lJOuNlsWtvI6rZC8zWmoWR3XHbrm9-r3zEQg5gKOUHCS2V2FTiRoCE3t_wKHXBX5fbJRwrDwfAhNltzAMtkQL2PShjWPh3MimUCXf0aM5Q-4UbktxDtZOF-7hEvCI6H3DBOFddNtbWKXbt64trElRdBdutQ-3Q72sxmfh9QOgLg"/><span class="font-title-md text-title-md text-primary tracking-tight font-bold">Spillburg Logistics 1</span></a></div><nav class="hidden lg:flex items-center gap-space-sm font-label-lg text-label-lg" data-active-classes="bg-surface-container text-primary font-label-lg font-bold rounded"><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><div class="relative group"><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center gap-1" data-path="services" href="#">Services</a><div class="absolute left-0 top-full hidden group-hover:block w-64 pt-2"><div class="bg-surface-container-lowest shadow-[0_4px_16px_rgba(16,36,58,0.08)] rounded p-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Sea Freight Forwarding</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Air Freight Coordination</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Road Transport</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Project Cargo Logistics</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded transition-colors" data-path="services" href="#">Customs &amp; Warehousing</a></div></div></div><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="industries" href="#">Industries</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="process" href="#">Process</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="news-and-insights" href="#">News &amp; Insights</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded hover:bg-tertiary hover:text-on-tertiary transition-colors" data-path="request-a-quote" href="#">Request a Quote</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Context Ribbon & Architectural Headline -->
+<section class="relative w-full bg-primary-container text-on-primary overflow-hidden pt-space-xl pb-space-2xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/4 -bottom-16 w-80 h-80 rounded-full bg-tertiary-container/30 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-gutter relative z-10">
+<!-- Route Metadata Code Bar -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-highest/20 font-technical-code text-technical-code uppercase tracking-wider text-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+          PORT OF COLOMBO GATEWAY • HUB REF #SL-2025-RFQ
+        </span>
+<span class="font-technical-code text-technical-code text-on-primary-container">ISO 9001:2015 REGISTERED DISPATCH DESK</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-primary tracking-tight font-bold">
+            Request a Logistics &amp; Freight Quotation
+          </h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-3xl leading-relaxed">
+            Submit your shipment specifications. Our cargo coordination team will review trade lanes, capacity, and schedule requirements to provide an enterprise-grade commercial proposal.
+          </p>
+</div>
+<!-- Metric / SLA Pill Cluster -->
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm">
+<div class="p-space-sm bg-surface-container-highest/15 backdrop-blur-md rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">timer</span>
+<span class="font-label-md text-label-md text-on-primary">Standard SLA</span>
+</div>
+<span class="font-technical-code text-technical-code text-secondary-fixed">≤ 24h Turnaround</span>
+</div>
+<div class="p-space-sm bg-surface-container-highest/15 backdrop-blur-md rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">support_agent</span>
+<span class="font-label-md text-label-md text-on-primary">Trade Desk</span>
+</div>
+<span class="font-technical-code text-technical-code text-on-primary-container">Dedicated Specialist</span>
+</div>
+</div>
+</div>
+<!-- Trust Badges Rail -->
+<div class="mt-space-xl pt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container-highest/10">
+<div class="w-8 h-8 rounded bg-secondary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-primary">Verified B2B Response</span>
+<span class="font-technical-code text-technical-code text-on-primary-container">Audited pricing within 24 operational hours</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container-highest/10">
+<div class="w-8 h-8 rounded bg-secondary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-primary">Dedicated Coordinator</span>
+<span class="font-technical-code text-technical-code text-on-primary-container">Single point of contact from berth to ramp</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container-highest/10">
+<div class="w-8 h-8 rounded bg-secondary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">public</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-primary">Sri Lanka &amp; Global Lanes</span>
+<span class="font-technical-code text-technical-code text-on-primary-container">Transshipment hub linking EU, Asia, MEA &amp; US</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Operations Pulse Ticker -->
+<section class="w-full bg-surface-container-high py-space-xs overflow-hidden">
+<div class="max-w-7xl mx-auto px-gutter flex flex-wrap items-center justify-between gap-space-sm font-technical-code text-technical-code text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="uppercase tracking-wider text-primary font-bold">Col-Terminal Live Feed</span>
+<span>Berth Efficiency: 98.4%</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>Bunker IFO380: Nominal</span>
+<span>Colombo CFS Staging: Optimal</span>
+<span class="text-secondary font-bold">Customs EDI Status: Active</span>
+</div>
+</div>
+</section>
+<!-- Main Inquiry Section (Asymmetric Workspace Grid) -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left: Industrial Quote Builder (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<form class="flex flex-col gap-space-lg" id="freight-quote-form" onsubmit="event.preventDefault(); handleQuoteSubmission();">
+<!-- STEP 1: Contact & Company Profile -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-technical-code text-technical-code font-bold">01</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Contact &amp; Company Profile</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identify the contracting business entity and primary cargo coordinator.</p>
+</div>
+</div>
+<span class="font-technical-code text-technical-code px-2 py-0.5 rounded bg-surface-container text-on-surface-variant uppercase">Mandatory</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="contact-name">
+                    Full Name <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="contact-name" placeholder="e.g. Ruwan Wickramasinghe" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="company-name">
+                    Company / Business Name <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="company-name" placeholder="e.g. Apex Global Exports (Pvt) Ltd" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="work-email">
+                    Corporate Email <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="work-email" placeholder="logistics@apexexports.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="phone-whatsapp">
+                    Telephone / WhatsApp <span class="text-error">*</span>
+</label>
+<div class="flex gap-2">
+<input class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="phone-whatsapp" placeholder="+94 77 123 4567" required="" type="tel"/>
+</div>
+</div>
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="origin-office-country">
+                    Headquarter / Issuing Office Country
+                  </label>
+<select class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="origin-office-country">
+<option selected="" value="Sri Lanka">Sri Lanka (Colombo / Katunayake / Hambantota)</option>
+<option value="India">India (Mumbai / Chennai / Mundra)</option>
+<option value="Singapore">Singapore (Port of Singapore Hub)</option>
+<option value="UAE">United Arab Emirates (Jebel Ali / Dubai)</option>
+<option value="United Kingdom">United Kingdom (Felixstowe / Southampton / LHR)</option>
+<option value="United States">United States (East / West Coast)</option>
+<option value="Germany">Germany (Hamburg / Frankfurt)</option>
+<option value="Other">Other Global Trading Territory</option>
+</select>
+</div>
+</div>
+</div>
+<!-- STEP 2: Route & Transit Details -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-technical-code text-technical-code font-bold">02</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Route &amp; Transit Details</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Specify origin gate, target port of discharge, trade terms, and readiness dates.</p>
+</div>
+</div>
+<span class="font-technical-code text-technical-code text-secondary">Intermodal Manifest</span>
+</div>
+<!-- Route Directional Visualizer -->
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-technical-code text-technical-code">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-semibold">Origin CFS / Port</span>
+</div>
+<div class="flex-1 hidden sm:flex items-center px-4">
+<div class="w-full h-0.5 bg-secondary-fixed-dim relative">
+<span class="material-symbols-outlined absolute left-1/2 -top-2.5 -translate-x-1/2 text-secondary text-[16px]">arrow_forward</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="text-on-surface font-semibold">Destination CY / Ramp</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="origin-port">
+                    Origin Location / Port of Loading (POL) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">anchor</span>
+<input class="w-full pl-10 pr-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="origin-port" placeholder="e.g. Port of Colombo (LKCMB) or City" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="destination-port">
+                    Destination Location / Port of Discharge (POD) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">location_on</span>
+<input class="w-full pl-10 pr-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="destination-port" placeholder="e.g. Rotterdam (NLRTM) or Los Angeles" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="incoterm">
+                    Governing Incoterms ® (2020) <span class="text-error">*</span>
+</label>
+<select class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="incoterm" required="">
+<option value="FOB">FOB - Free On Board</option>
+<option selected="" value="CIF">CIF - Cost, Insurance and Freight</option>
+<option value="EXW">EXW - Ex Works</option>
+<option value="DDP">DDP - Delivered Duty Paid</option>
+<option value="CFR">CFR - Cost and Freight</option>
+<option value="FCA">FCA - Free Carrier</option>
+<option value="DAP">DAP - Delivered at Place</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="ready-date">
+                    Cargo Readiness / Target ETD <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="ready-date" required="" type="date"/>
+</div>
+</div>
+</div>
+<!-- STEP 3: Cargo & Shipment Specifications -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-technical-code text-technical-code font-bold">03</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Cargo &amp; Shipment Specifications</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select transport modality, commodity class, and precise volumetric measurements.</p>
+</div>
+</div>
+<span class="font-technical-code text-technical-code text-tertiary-fixed-dim bg-primary px-2 py-0.5 rounded">Payload Data</span>
+</div>
+<!-- Modality Selector Chips (Radio Grid) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Primary Transport Mode</span>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm" id="mode-selector">
+<label class="cursor-pointer relative">
+<input checked="" class="peer sr-only" name="freight-mode" type="radio" value="Sea Freight (FCL/LCL)"/>
+<div class="p-space-sm rounded bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary transition-all flex flex-col items-center text-center gap-1 h-full justify-center">
+<span class="material-symbols-outlined text-[24px]">directions_boat</span>
+<span class="font-label-md text-label-md font-bold">Sea Freight</span>
+<span class="font-technical-code text-technical-code opacity-75">FCL / LCL Ocean</span>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="freight-mode" type="radio" value="Air Freight"/>
+<div class="p-space-sm rounded bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary transition-all flex flex-col items-center text-center gap-1 h-full justify-center">
+<span class="material-symbols-outlined text-[24px]">flight_takeoff</span>
+<span class="font-label-md text-label-md font-bold">Air Cargo</span>
+<span class="font-technical-code text-technical-code opacity-75">Express / Consolid</span>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="freight-mode" type="radio" value="Road Transport"/>
+<div class="p-space-sm rounded bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary transition-all flex flex-col items-center text-center gap-1 h-full justify-center">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+<span class="font-label-md text-label-md font-bold">Road Haulage</span>
+<span class="font-technical-code text-technical-code opacity-75">Interstate / Drayage</span>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="freight-mode" type="radio" value="Project Cargo"/>
+<div class="p-space-sm rounded bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary transition-all flex flex-col items-center text-center gap-1 h-full justify-center">
+<span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+<span class="font-label-md text-label-md font-bold">Project Cargo</span>
+<span class="font-technical-code text-technical-code opacity-75">OOG / Heavy Lift</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Commodity and Equipment details -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="commodity-type">
+                    Commodity Category <span class="text-error">*</span>
+</label>
+<select class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="commodity-type" required="">
+<option selected="" value="General Commercial Goods">General Commercial Goods / FAK</option>
+<option value="Apparel &amp; Garments">Apparel, Garments &amp; Textiles</option>
+<option value="Industrial Machinery">Industrial Machinery &amp; Engineering Spares</option>
+<option value="Tea &amp; Perishables">Pure Ceylon Tea, Spices &amp; Agri-Produce</option>
+<option value="Hazmat DG">Dangerous Goods / Hazmat (IMO Regulated)</option>
+<option value="Electronics">Consumer Electronics &amp; High-Tech</option>
+<option value="Construction &amp; Steel">Construction Material &amp; Structural Steel</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="container-spec">
+                    Container Type / Packaging Method
+                  </label>
+<select class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="container-spec">
+<option value="20GP">1x 20ft General Purpose (20' GP)</option>
+<option value="40GP">1x 40ft General Purpose (40' GP)</option>
+<option selected="" value="40HC">1x 40ft High Cube (40' HC)</option>
+<option value="Multiple Containers">Multiple Containers (Fleet Allocation)</option>
+<option value="LCL Loose Pallets">LCL / Palletized Consignment</option>
+<option value="Flat Rack / Open Top">Special Equipment (Flat Rack / Open Top)</option>
+<option value="Air Cargo ULD">Air Cargo PMC / AKE Pallet</option>
+</select>
+</div>
+</div>
+<!-- Measurement Metrics (Weight, Volume, Pieces) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-1 p-space-sm rounded bg-surface-container-low">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="gross-weight">Gross Weight</label>
+<span class="font-technical-code text-technical-code text-secondary font-bold">KG / TONS</span>
+</div>
+<input class="w-full px-2.5 py-1.5 rounded bg-surface-container-lowest text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" id="gross-weight" placeholder="e.g. 18,450 KG" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1 p-space-sm rounded bg-surface-container-low">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="cargo-volume">Total Volume</label>
+<span class="font-technical-code text-technical-code text-secondary font-bold">CBM</span>
+</div>
+<input class="w-full px-2.5 py-1.5 rounded bg-surface-container-lowest text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" id="cargo-volume" placeholder="e.g. 52.8 CBM" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1 p-space-sm rounded bg-surface-container-low">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="total-units">Package Count</label>
+<span class="font-technical-code text-technical-code text-secondary font-bold">UNITS</span>
+</div>
+<input class="w-full px-2.5 py-1.5 rounded bg-surface-container-lowest text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" id="total-units" placeholder="e.g. 42 Cartons / 8 Crates" type="text"/>
+</div>
+</div>
+</div>
+<!-- STEP 4: Value-Added Requirements & Special Instructions -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-technical-code text-technical-code font-bold">04</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Value-Added Requirements &amp; Instructions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Include customs brokerage, end-to-end transport insurance, or local staging.</p>
+</div>
+</div>
+<span class="font-technical-code text-technical-code text-on-surface-variant">Full-Suite Services</span>
+</div>
+<!-- Ancillary Checkbox Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary" id="chk-customs" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Sri Lanka Customs Clearance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">In-house declaration, BOI entry processing, documentation</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary" id="chk-insurance" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Comprehensive Cargo Insurance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Institute Cargo Clauses (A) all-risk multi-voyage coverage</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary" id="chk-warehouse" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Warehousing &amp; Buffer Storage</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bonded warehouse access &amp; de-consolidation in Colombo</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary" id="chk-door" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Final Door Delivery (Last-Mile)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Container prime mover or tail-lift urban delivery</span>
+</div>
+</label>
+</div>
+<!-- Notes / Special Instructions -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide" for="special-instructions">
+                  Special Cargo Instructions &amp; Temperature / Stacking Requirements
+                </label>
+<textarea class="w-full px-space-sm py-2 rounded bg-surface-container-low text-body-md text-on-surface focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all resize-y" id="special-instructions" placeholder="Detail any non-standard dimensions, dangerous goods UN numbers, reefer temperature setpoints (+/- °C), target vessel line preference, or transshipment constraints..." rows="4"></textarea>
+</div>
+<!-- Confidentiality Notice & Final Trigger Action -->
+<div class="pt-space-sm border-t-0 flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-xs text-on-surface-variant max-w-md">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5 shrink-0">lock</span>
+<p class="font-technical-code text-technical-code">
+                    Your commercial shipment details are handled in strict confidence under Spillburg Group privacy standards. Encrypted transmission.
+                  </p>
+</div>
+<button class="w-full md:w-auto px-space-xl py-space-sm rounded bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-primary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-sm" id="submit-btn" type="submit">
+<span>Submit Freight Quotation Request</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+<!-- Client Success Feedback Banner (Hidden by default) -->
+<div class="hidden p-space-lg rounded bg-secondary-fixed text-on-secondary-fixed shadow-md animate-fade-in flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md" id="quote-success-banner">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">check</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold">RFQ Docket Registered Successfully</h3>
+<p class="font-body-sm text-body-sm mt-0.5">Reference ID: <span class="font-technical-code font-bold" id="quote-ref-code">#SB-RFQ-8849</span>. Our Colombo Operations Desk is evaluating carrier allocations.</p>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md" onclick="resetQuoteForm()" type="button">New Request</button>
+</div>
+</form>
+<!-- Dynamic Rate Index Preview Visual -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Spot Benchmark Reference (Port of Colombo Hub)</span>
+<span class="font-technical-code text-technical-code text-on-surface-variant">Updated: Q2 Rolling Average</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-technical-code text-technical-code text-on-surface-variant block">Colombo → Rotterdam</span>
+<span class="font-title-md text-title-md font-bold text-primary">19 - 22 Days</span>
+<span class="font-technical-code text-technical-code text-secondary block mt-1">Direct Feeder/Mother</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-technical-code text-technical-code text-on-surface-variant block">Colombo → Singapore</span>
+<span class="font-title-md text-title-md font-bold text-primary">4 - 6 Days</span>
+<span class="font-technical-code text-technical-code text-secondary block mt-1">High-Frequency Loop</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-technical-code text-technical-code text-on-surface-variant block">Colombo → Jebel Ali</span>
+<span class="font-title-md text-title-md font-bold text-primary">5 - 7 Days</span>
+<span class="font-technical-code text-technical-code text-secondary block mt-1">Daily Sailings</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest">
+<span class="font-technical-code text-technical-code text-on-surface-variant block">CMB → JFK (Air Freight)</span>
+<span class="font-title-md text-title-md font-bold text-primary">36 - 48 Hours</span>
+<span class="font-technical-code text-technical-code text-secondary block mt-1">Priority Belly Cargo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Operational Support & Port Command Sidebar (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Immediate Commercial Support Card -->
+<div class="bg-primary text-on-primary p-space-lg rounded shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-secondary/15 rounded-full blur-2xl"></div>
+<div class="flex items-center justify-between border-b border-surface-container-highest/20 pb-space-sm">
+<span class="font-label-lg text-label-lg font-bold text-secondary-fixed uppercase tracking-wider">Direct Freight Desk</span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-variant">
+              Need immediate rate calculations for tender tenders or demurrage consultation? Connect directly with our cargo managers.
+            </p>
+<div class="flex flex-col gap-space-sm font-technical-code text-technical-code">
+<a class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container-highest/10 hover:bg-surface-container-highest/20 transition-colors" href="tel:+94112345678">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">phone_in_talk</span>
+<div class="flex flex-col">
+<span class="text-on-primary font-bold">+94 (11) 234-5678</span>
+<span class="text-on-primary-container text-[11px]">Primary Port Desk (08:30 - 18:00 IST)</span>
+</div>
+</a>
+<a class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container-highest/10 hover:bg-surface-container-highest/20 transition-colors" href="mailto:ops@spillburglogistics1.com">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">mark_email_read</span>
+<div class="flex flex-col">
+<span class="text-on-primary font-bold">ops@spillburglogistics1.com</span>
+<span class="text-on-primary-container text-[11px]">Rapid RFQ Processing Queue</span>
+</div>
+</a>
+<a class="flex items-center gap-space-sm p-space-sm rounded bg-surface-container-highest/10 hover:bg-surface-container-highest/20 transition-colors" href="tel:+94771234567">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">support</span>
+<div class="flex flex-col">
+<span class="text-on-primary font-bold">+94 (77) 123-4567</span>
+<span class="text-on-primary-container text-[11px]">24/7 Berthing &amp; Vessel Dispatch Line</span>
+</div>
+</a>
+</div>
+<!-- Time Critical Emergency Inquiry Callout -->
+<div class="p-space-sm rounded bg-tertiary-container text-tertiary-fixed flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mt-0.5 text-[20px]">crisis_alert</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-tertiary-fixed">Critical / AOG Dispatch?</span>
+<span class="font-body-sm text-body-sm mt-0.5 leading-snug">
+                  Mark subject as <strong class="text-on-tertiary">URGENT ROUTING</strong> or call the 24/7 berthing hotline directly for immediate priority berth confirmation.
+                </span>
+</div>
+</div>
+</div>
+<!-- Port Hub Operational Location Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Operations Hub</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">corporate_fare</span>
+</div>
+<div class="overflow-hidden rounded h-40 relative group">
+<img class="w-full h-full object-cover" data-alt="Aerial view of Colombo commercial container port terminals with gantry cranes loading large maritime container vessels at twilight, with deep ocean waters and logistics staging yards in industrial navy and warm lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_WMxFCn_3ZOAaq5pnjFUlqONNsNb3TQrrVcRFs90iH0n-aArmtEatuPlO8Lr40iD4gl7poEv52u8ztDt6cRcs8eGnknh8z5Nerp5_tx7Z9CsXTv6VQAl7VNH-XRp589L7zA_L-iAHxuZsvCc_2rb0nTxmnlBoe5AVxiNTv6VsFS4CNrmypd797ZeS0l5oRCNZ4lU9DyDLd4DPzIiG4Y2VaoMv5gzHQR5V3_9iG2Rn"/>
+<div class="absolute inset-0 bg-primary/30 group-hover:bg-primary/10 transition-colors"></div>
+<div class="absolute bottom-2 left-2 px-2 py-1 bg-primary-container/90 backdrop-blur-sm rounded font-technical-code text-technical-code text-on-primary">
+                PORT OF COLOMBO TERMINAL PRECINCT
+              </div>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-bold text-primary">Spillburg Logistics 1 (Pvt) Ltd</span>
+<span>Port of Colombo Logistics Zone</span>
+<span>No. 12 Fort Commercial Precinct</span>
+<span>Colombo 00100, Sri Lanka</span>
+<span class="font-technical-code text-technical-code text-secondary pt-1">Coordinates: 6.9428° N, 79.8437° E</span>
+</div>
+</div>
+<!-- 3-Step "What Happens Next?" Walkthrough -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">
+              What Happens After Submitting?
+            </h3>
+<div class="relative flex flex-col gap-space-lg pl-6">
+<!-- Visual Vertical Tracking Line -->
+<div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container-high"></div>
+<!-- Step 1 -->
+<div class="relative flex flex-col gap-1">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-technical-code text-[11px] font-bold">1</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Trade Lane Feasibility Review</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Our Colombo freight specialist evaluates current carrier space allocations, transit times, and demurrage parameters for your designated corridor.
+                </p>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col gap-1">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-technical-code text-[11px] font-bold">2</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Rate Analysis &amp; Route Routing</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  We balance cost-efficiency versus speed, structuring tier options across direct liner vessels, consolidated freight, or multi-modal transfers.
+                </p>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col gap-1">
+<span class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-tertiary-fixed-dim text-primary flex items-center justify-center font-technical-code text-[11px] font-bold">3</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Commercial Proposal Delivery</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  You receive an itemized, binding commercial rate proposal within 24 hours featuring all relevant surcharges, customs lines, and validation windows.
+                </p>
+</div>
+</div>
+</div>
+<!-- Documentation Compliance Callout -->
+<div class="bg-surface-container-low p-space-md rounded flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">inventory_2</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Need Bill of Lading (BL) Consignment Advice?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Our export documentation teams verify Letter of Credit (LC) clauses and pre-manifest filings seamlessly.
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Terminal Workflow Micro-Script -->
+<script>
+    function handleQuoteSubmission() {
+      const btn = document.getElementById('submit-btn');
+      const banner = document.getElementById('quote-success-banner');
+      const refCode = document.getElementById('quote-ref-code');
+      
+      // Visual feedback on button
+      btn.disabled = true;
+      btn.classList.add('opacity-75', 'cursor-not-allowed');
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">autorenew</span><span>Processing Routing Request...</span>';
+      
+      setTimeout(function() {
+        // Generate pseudo-random realistic logistics manifest ID
+        const randomNum = Math.floor(1000 + Math.random() * 9000);
+        refCode.textContent = '#SB-RFQ-' + randomNum;
+        
+        banner.classList.remove('hidden');
+        btn.classList.add('hidden');
+        
+        // Scroll smoothly to confirmation banner
+        banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 700);
+    }
+
+    function resetQuoteForm() {
+      const form = document.getElementById('freight-quote-form');
+      const btn = document.getElementById('submit-btn');
+      const banner = document.getElementById('quote-success-banner');
+      
+      form.reset();
+      banner.classList.add('hidden');
+      btn.classList.remove('hidden', 'opacity-75', 'cursor-not-allowed');
+      btn.disabled = false;
+      btn.innerHTML = '<span>Submit Freight Quotation Request</span><span class="material-symbols-outlined text-[20px]">send</span>';
+      
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low pt-space-2xl pb-space-lg"><div class="max-w-7xl mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Spillburg Logistics 1 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wz53Z6aGW-EPgVLULIxs9il6wuL5S9Stx-L0cyUgH2GXFMeY2cx1egrYh2B-jTrQ-lJOuNlsWtvI6rZC8zWmoWR3XHbrm9-r3zEQg5gKOUHCS2V2FTiRoCE3t_wKHXBX5fbJRwrDwfAhNltzAMtkQL2PShjWPh3MimUCXf0aM5Q-4UbktxDtZOF-7hEvCI6H3DBOFddNtbWKXbt64trElRdBdutQ-3Q72sxmfh9QOgLg"/><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Spillburg Logistics 1</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Practical logistics solutions designed to keep cargo moving and businesses connected. Premier multi-hub freight management based in Colombo.</p><div class="flex flex-col gap-space-xs font-technical-code text-technical-code text-on-surface-variant pt-space-sm"><span class="font-bold text-primary">MEMBER OF SPILLBURG GROUP</span><span>Licensed Multimodal Transport Operator (MTO) &amp; Customs Broker</span><span>Port of Colombo Freight Hub Facility</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Services</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Sea Freight Forwarding</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Air Cargo Coordination</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Overland Transport</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Project Cargo Logistics</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Warehousing &amp; Distribution</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="services" href="#">Customs Clearance Coordination</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Target Industries</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Manufacturing</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Retail &amp; Wholesale</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Construction &amp; Infrastructure</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="industries" href="#">Project Cargo Sector</a></div><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider pt-space-sm">Company &amp; Governance</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">About Us</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="process" href="#">Operational Principles</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">QHSE &amp; Safety Policy</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="about-us" href="#">Spillburg Group Affiliation</a><a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="contact" href="#">Careers</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Sri Lanka Operations</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span>Port of Colombo Logistics Zone</span><span>No. 12 Fort Commercial Precinct</span><span>Colombo 00100, Sri Lanka</span><span class="pt-space-xs text-primary font-bold">Desk: +94 (11) 234-5678</span><span class="text-primary font-bold">24/7 Ops: +94 (77) 123-4567</span><span>Email: ops@spillburglogistics1.com</span><span>Mon - Fri: 08:30 - 17:30 IST</span><span class="text-secondary font-medium">24/7 Berthing &amp; Air Cargo Dispatch</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-technical-code text-technical-code text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>© 2025 Spillburg Logistics 1 (Pvt) Ltd. All rights reserved.</span></div><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="contact" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="contact" href="#">Terms of Carriage</a><a class="hover:text-primary transition-colors" data-path="about-us" href="#">Spillburg Holdings Corporate</a></div></div></div></footer></body></html>

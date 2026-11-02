@@ -1,0 +1,422 @@
+i have made the company website for holdings and corporate services, final was finalized by director, premium and professional, 
+design the logistics 1 website,  use websites https://www.spillburg.com https://www.spillburgcorporate.com/en  
+www.spillburglogistics1.com all of them should be unique not repetetive and have the same picture, each company sells something new
+
+The key is to design Spillburg Logistics 1 as a distinct logistics and freight-forwarding brand within the Spillburg group, rather than creating another version of the Holdings or Corporate Services website.
+
+Since the Holdings and Corporate Services designs have already been finalized by the director, the new website should maintain the same level of premium quality and professionalism, but have its own visual identity, imagery, layout, and messaging. Spillburg Vacation can remain as it is; we should use it only to understand the wider group.
+
+The prompt below is designed for Google Stitch to generate a complete, high-quality website design that feels credible for an international logistics company.
+
+## Copy this prompt into Google Stitch
+
+# GOOGLE STITCH MASTER PROMPT — SPILLBURG LOGISTICS 1
+
+## 1. Project objective
+
+Design a complete, premium, modern, corporate website for **Spillburg Logistics 1**, a Sri Lanka-based logistics and cargo transportation business.
+
+Website: [https://www.spillburglogistics1.com/](https://www.spillburglogistics1.com/)
+
+The website must position Spillburg Logistics 1 as a credible, professional, internationally minded logistics brand. The design should communicate operational reliability, efficient cargo movement, precision, supply-chain coordination and business-to-business service.
+
+This is a new website design project, not a redesign of the other Spillburg websites. Create an original visual identity for Logistics 1 while maintaining the broader group's standard of professionalism and quality.
+
+## 2. Reference websites — study before designing
+
+Review all four websites before generating the design:
+
+1. [https://www.spillburg.com](https://www.spillburg.com) — Spillburg Holdings
+2. [https://www.spillburgcorporate.com/en](https://www.spillburgcorporate.com/en) — Spillburg Corporate Services
+3. [https://spillburgvacation.com/v7/](https://spillburgvacation.com/v7/) — Spillburg Vacation
+4. [https://www.spillburglogistics1.com](https://www.spillburglogistics1.com) — existing Spillburg Logistics 1 website
+
+Study their branding, layouts, typography, navigation, spacing, imagery, content structure and overall design quality.
+
+### Brand architecture and differentiation
+
+Each website must represent a different business with a different commercial purpose.
+
+**Spillburg Holdings**
+
+- Business advisory, investment facilitation and management consultancy.
+- Premium, strategic, executive-level corporate positioning.
+- Focus on investment, business growth, market entry and strategic partnerships.
+
+**Spillburg Corporate Services**
+
+- Corporate, financial, accounting, tax, compliance and business support services.
+- Professional, precise, structured and compliance-oriented.
+- Focus on corporate operations, financial integrity and business administration.
+
+**Spillburg Vacation**
+
+- Travel, tourism, destination management and curated travel experiences.
+- Keep the existing website and its current design as it is.
+- Do not redesign, modernize or reproduce its visual style.
+
+**Spillburg Logistics 1**
+
+- Logistics, freight movement and cargo transportation.
+- Focus on moving goods, cargo coordination, transport operations, shipment planning and dependable logistics support.
+- Its visual identity should communicate movement, infrastructure, operational precision, reliability and international commerce.
+
+Do not merge these businesses into one generic corporate website. Do not reuse their page layouts, marketing copy, hero compositions or photography.
+
+The relationship between the businesses should be subtle, through professional standards and an understated parent-group reference where appropriate.
+
+## 3. Creative direction
+
+Create a premium B2B logistics website inspired by the quality of established international freight and supply-chain companies, but with an original design tailored to Spillburg Logistics 1 and the Sri Lankan market.
+
+The aesthetic should feel:
+
+- Premium and sophisticated
+- Operationally capable and trustworthy
+- Modern and internationally relevant
+- Industrial without feeling harsh
+- Corporate without being boring
+- Visually strong without excessive animations or decoration
+- Appropriate for importers, exporters, manufacturers, distributors, project operators and corporate clients
+
+### Suggested visual identity
+
+Develop an independent Logistics 1 color palette.
+
+Primary direction:
+
+- Deep midnight navy: #10243A
+- Industrial blue: #245B82
+- Warm white: #F7F8FA
+- Graphite: #303B46
+- Restrained amber accent: #E7A33E
+
+These are proposed colors for Logistics 1, not mandatory colors for the other companies.
+
+Use navy for authority, blue for logistics infrastructure and amber sparingly for calls to action, route indicators or important interface elements.
+
+Use a strong, modern sans-serif typeface. Establish a clear typographic hierarchy with bold, confident headlines and highly readable body text.
+
+Use generous whitespace, structured grids, carefully aligned sections, restrained borders and subtle shadows. Avoid excessive rounded cards, generic gradients and template-like layouts.
+
+## 4. Photography and image direction
+
+Photography is one of the most important requirements.
+
+Use relevant, high-quality, realistic logistics photography:
+
+- Cargo ships and container terminals
+- Port cranes and shipping containers
+- Freight trucks on highways
+- Warehousing and distribution operations
+- Container loading and cargo handling
+- Industrial logistics infrastructure
+- Air freight and cargo aircraft, where relevant
+- Realistic Sri Lankan port and transport environments where appropriate
+
+### Strict image differentiation rules
+
+Do not copy the same hero image, section image, image crop or stock-photo selection used on Spillburg Holdings, Spillburg Corporate Services or Spillburg Vacation.
+
+Do not repeat a single logistics image across multiple sections merely to fill space.
+
+Every major section should have its own relevant image. Use a consistent photographic treatment, but vary the subject, composition, crop and environment.
+
+Prioritize authentic operational photography over generic businesspeople shaking hands, office meetings, abstract technology backgrounds or unrelated corporate stock images.
+
+Do not use travel beaches, holiday resorts, tourist couples or destination photography from Spillburg Vacation.
+
+Do not use accounting desks, calculators, financial reports or corporate-advisory imagery as the primary visual language.
+
+If authentic company photographs are unavailable, use suitable professional illustrative placeholders without implying that they depict Spillburg's actual operations.
+
+## 5. Website structure
+
+Design a complete multi-page website, not just a homepage.
+
+### A. Homepage
+
+Create an impactful, editorial-style homepage with the following sections:
+
+1. **Header and navigation**
+   - Spillburg Logistics 1 logo or a clearly identified logo placeholder.
+   - Home
+   - About Us
+   - Services
+   - Industries
+   - Resources or News
+   - Contact
+   - A prominent “Request a Quote” button.
+   - Responsive mobile navigation.
+2. **Hero section**
+   - Large, cinematic logistics photograph.
+   - Strong headline focused on reliable cargo movement and logistics coordination.
+   - Supporting text explaining the company's value proposition.
+   - Primary CTA: “Request a Quote”.
+   - Secondary CTA: “Explore Our Services”.
+   - Strong contrast, readable text and an uncluttered composition.
+   Suggested headline direction:\
+   “Moving Cargo. Connecting Businesses.”
+
+   Suggested supporting copy:\
+   “Practical logistics solutions designed to keep cargo moving and businesses connected.”
+
+   Treat this as proposed copy, not a verified company statement.
+3. **Service overview**
+   - Present services in a distinctive grid or structured editorial layout.
+   - Use relevant photographs, restrained icons and concise descriptions.
+   - Make each service easy to understand at a glance.
+4. **Why choose Spillburg Logistics 1**
+   - Dependability
+   - Clear communication
+   - Operational coordination
+   - Customer-focused service
+   - Flexible logistics support
+   Present these as proposed value propositions to be confirmed, not proven achievements or certifications.
+5. **Logistics process**
+   - Understand the shipment requirement.
+   - Plan the logistics solution.
+   - Coordinate the movement.
+   - Communicate progress.
+   - Support delivery and follow-up.
+   Use a horizontal process timeline on desktop and a vertical timeline on mobile.
+6. **Industries served**\
+   Create a visual section for potential customer sectors such as manufacturing, retail, wholesale distribution, construction and project cargo.
+
+   Include only sectors that the company confirms it serves. Otherwise, label them as proposed target industries in the design deliverable.
+7. **Logistics capability feature**
+   - Use a strong port, freight or cargo-handling photograph.
+   - Include a short, informative narrative about coordinated cargo movement.
+   - Avoid unverified claims about fleet size, international coverage, facilities or shipment volumes.
+8. **Quote request call to action**
+   - A visually distinctive section inviting businesses to discuss shipment requirements.
+   - CTA: “Discuss Your Shipment”.
+9. **Latest updates**
+   - A restrained news, insights or company-updates section.
+   - Use real published content when available.
+   - If no verified articles exist, provide clearly marked placeholder content.
+10. **Footer**
+    - Logo and short company description.
+    - Main navigation.
+    - Verified contact information.
+    - Verified office address and social links, where available.
+    - Privacy policy and relevant legal links.
+    - A subtle link to the wider Spillburg group.
+
+### B. About Us
+
+Create a dedicated company profile page containing:
+
+- Company introduction
+- Business purpose and logistics focus
+- Service philosophy
+- Approach to customer relationships
+- Operational principles
+- Team or leadership section, only when verified information and approved images are available
+- A contact CTA
+
+Use a distinct editorial layout with operational photography. Do not duplicate the Holdings or Corporate Services About page structure word for word.
+
+Do not invent a founding date, company history, leadership names, certifications, international partnerships or company achievements.
+
+### C. Services
+
+Create a main Services page with a clear overview of confirmed service offerings.
+
+Possible service categories to investigate against the existing website and company records include:
+
+- Freight forwarding
+- Sea freight
+- Air freight
+- Road freight and cargo transportation
+- Import and export cargo coordination
+- Containerized cargo
+- Project cargo and specialized transportation
+- Warehousing and distribution
+- Customs clearance coordination
+- Supply-chain and logistics support
+
+These are candidate categories, not a verified service list. Only present services as available offerings when supported by the existing website or approved company information.
+
+Each service should have a dedicated detail page where appropriate, with:
+
+- Service introduction
+- Relevant logistics imagery
+- Scope of service
+- Customer benefits
+- Process overview
+- Frequently asked questions, when useful
+- A service-specific quote request CTA
+
+Do not promise customs brokerage, owned fleets, warehouses, worldwide delivery or specialized cargo handling unless verified.
+
+### D. Industries
+
+Create a visually engaging page explaining the sectors the company supports.
+
+Use sector-specific layouts and imagery, rather than repeating identical cards. Potential sectors should be verified before publication.
+
+Include a CTA for businesses with specific cargo or transportation requirements.
+
+### E. Request a Quote
+
+Design a professional, user-friendly logistics enquiry form with these fields:
+
+- Full name
+- Company name
+- Business email
+- Phone number
+- Origin
+- Destination
+- Shipment type
+- Cargo description
+- Estimated weight or volume, if known
+- Preferred shipping method
+- Additional requirements
+
+Include a clear privacy note and a prominent submission button.
+
+Make the form practical on mobile. Do not imply real-time freight pricing, automated shipment tracking or instant quotations unless those systems actually exist.
+
+### F. News and Resources
+
+Create a clean, optional content area for company updates, logistics insights and relevant announcements.
+
+Use an editorial layout with publication dates, readable article pages and related content.
+
+Do not invent company announcements or publish fabricated industry statistics as factual information.
+
+### G. Contact Us
+
+Include:
+
+- Verified business contact details
+- A contact form
+- Verified office location, if available
+- Appropriate contact CTA
+- A map only if a verified office address is available
+
+Do not automatically copy the contact details of Spillburg Holdings or Corporate Services as Logistics 1's contact information. Confirm whether shared group contact details are authorized for this business.
+
+## 6. Design system and UI components
+
+Create a consistent component library specifically for Logistics 1:
+
+- Header and responsive navigation
+- Footer
+- Primary and secondary buttons
+- Service cards
+- Image-and-text feature sections
+- Quote form components
+- Breadcrumbs
+- Section headings
+- Industry modules
+- Article cards
+- Contact panels
+- FAQ accordions
+- Responsive mobile navigation
+
+Use consistent spacing, typography, colors and image treatments across the new website while allowing different page layouts to avoid repetition.
+
+Create a polished desktop experience at 1440px width and properly designed tablet and mobile layouts.
+
+Ensure readable text contrast, keyboard accessibility, clear form labels, visible focus states and appropriate image descriptions.
+
+## 7. Interaction and user experience
+
+Design realistic interactions for:
+
+- Sticky or compact navigation where appropriate
+- Desktop dropdown menus
+- Mobile menu
+- Hover and focus states
+- Service detail navigation
+- FAQ accordions
+- Form validation and submission states
+- Quote request confirmation
+- Clear CTA pathways from services to enquiries
+
+Keep motion subtle and purposeful. Avoid excessive scroll animations, parallax effects and decorative movement that distracts from the business purpose.
+
+Do not design non-functional shipment tracking, live maps, rate calculators or customer portals unless explicitly confirmed as existing or approved functionality.
+
+## 8. SEO and conversion
+
+Structure the website around real commercial search intent, including relevant topics such as:
+
+- Logistics services in Sri Lanka
+- Freight forwarding in Sri Lanka
+- Cargo transportation
+- Sea and air freight, if offered
+- Business logistics support
+
+Use meaningful page headings, descriptive metadata placeholders, clean page structures, image alt text and internal linking.
+
+Prioritize conversion through clear service explanations, visible quote-request buttons and a short, intuitive enquiry process.
+
+Do not use keyword stuffing or unsupported superlatives.
+
+## 9. Content accuracy and source hierarchy
+
+Use this order of authority:
+
+1. The existing Spillburg Logistics 1 website and its verified company-specific content.
+2. Approved company information and assets supplied by the user.
+3. The Holdings and Corporate Services websites for understanding the wider brand standard and approved group-level information.
+4. Proposed copy and placeholder content clearly identified for company review.
+
+Do not assume that every service offered by Holdings or Corporate Services is offered by Logistics 1.
+
+Do not invent client names, testimonials, statistics, accreditations, partnerships, fleet details, shipping routes, tracking capabilities or operational locations.
+
+Do not reuse the same testimonials, success stories, service descriptions or numerical claims from the other companies.
+
+Where information is missing, use editable placeholders and clearly flag the information requiring confirmation.
+
+## 10. Expected Google Stitch deliverables
+
+Generate the complete website design, with all major pages and reusable UI components.
+
+Start with a fully designed homepage, then create the About, Services, service-detail, Industries, Request a Quote, News and Contact pages.
+
+Ensure the pages share a coherent Logistics 1 design system but do not look like repeated copies of the same template.
+
+Use realistic logistics imagery, professional typography, excellent spacing and polished responsive layouts.
+
+The final result should be ready for review by the company director and suitable to hand over for implementation by a developer.
+
+### Final creative test
+
+If the Holdings, Corporate Services, Vacation and Logistics 1 websites were displayed side by side, a visitor should immediately understand that they belong to a related business group, while recognizing that each company serves a different need.
+
+**Design Spillburg Logistics 1 as a premium logistics business in its own right—not as another Spillburg corporate consultancy website.**
+
+## Recommended visual direction
+
+[LSM Logistics — Logística, Assessoria Aduaneira e Comércio Exterior em Santos/SP](https://images.openai.com/static-rsc-4/I4ewxVY7A3Ci8PBuJk4JkkGA68UfUIpBkWcmIMODAb2myLOYHIrUEz21a4Wwb3KBbfBmF6pHVPtFJtSwJhYG_TYzrsXP08eu1SVNOOdrzec_hlWK8TNR-0Y2PWKImIVkeGKfmtBJS2oZf79sqRzx-Xjfw6UDQ9sCBRrIft4oNK8?purpose=inline)
+
+1\. Hero — global logistics
+
+Use a cinematic container port photograph, strong headline and two clear calls to action. The first impression should communicate freight movement, not management consultancy.
+
+[FTL – Komplettladung LKW erklärt | Frachtportal](https://images.openai.com/static-rsc-4/kmO3vSgy_YSCR_JmNc0Nckvq7pgBTj7GiiqKrv-8cZlaFB42NyxJmJ7JEyIBNY2aCsa1brbbRsuSIfrPdozAvHy7M_aD11TSbRcs-UJX-4XexlZ0ovgRTu8Ux_PpAvrXG1kdjcVm8VkHpkyzxhyAhCUKKNXVCgbwNoIK9yWc__I?purpose=inline)
+
+2\. Services — operational clarity
+
+Use varied service layouts and imagery to make the company's actual logistics capabilities easy to understand.
+
+[Port & Intermodal Drayage Services | U.S. Ports | Atlantic Pacific Lines](https://images.openai.com/static-rsc-4/RSHduk7hguO2eTz2TLICv9I31NR9uqz5i0pT5vGB9EXwotTMXXeN_eyCxXD8wgqWU0FJGHEs3doUyglpGmN9RsJsc5RT_WsU8QwqZ5TvPhjE2T86pIz7rHxjQh9j6EX8dsz2fHOjBqkMIw974w8xMB9TGPueXkn0yh-mDGpoMFc?purpose=inline)
+
+3\. Capability — reliable movement
+
+Show cargo, transport infrastructure and practical logistics operations rather than repeating the hero image or using generic office photography.
+
+## How to use this in Stitch
+
+1. Open [Google Stitch](https://stitch.withgoogle.com/?utm_source=chatgpt.com).
+2. Start a new project and paste the master prompt above.
+3. If Stitch supports reference images or screenshots in your current workflow, supply screenshots of the finalized Holdings and Corporate Services websites and the existing Logistics 1 website.
+4. Generate the homepage first. Refine its visual direction before generating the remaining pages.
+5. Review all service claims and contact details against the actual Logistics 1 business before approving the design.
+
+My recommendation: Keep the group-wide quality consistent, but give Logistics 1 its own navy-and-industrial-blue identity, port and cargo photography, logistics-focused navigation and quote-led customer journey. The Holdings and Corporate Services sites already occupy the advisory and corporate-services space, so Logistics 1 should own the visual language of moving goods and coordinating freight.

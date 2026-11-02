@@ -1,0 +1,33 @@
+# Environment and local configs
+.env
+*.local
+.env.*.local
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+database/*.sqlite
+database/*.sqlite-journal
+
+# Logs & temp
+logs/
+*.log
+scratch/
+tmp/
+
+# Tools & portable runtimes
+tools/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Large prompt / backup archives
+*.zip
+prompt - Copy.txt
