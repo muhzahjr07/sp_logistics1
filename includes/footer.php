@@ -88,7 +88,8 @@
             <ul class="footer-bottom-links">
                 <li><a href="<?= url('privacy.php') ?>">Privacy Policy</a></li>
                 <li><a href="<?= url('terms.php') ?>">Trading Terms</a></li>
-                <li><a href="<?= url('sitemap.xml') ?>">Sitemap</a></li>
+                <li><a href="<?= url('sitemap.php') ?>">Sitemap</a></li>
+                <li><a href="<?= url('sitemap.xml') ?>" style="opacity: 0.7;">XML</a></li>
                 <li><a href="<?= url('admin/login.php') ?>" style="opacity: 0.4;">Operations Console</a></li>
             </ul>
         </div>

@@ -16,18 +16,16 @@ WORKDIR /var/www/html
 # Copy application source
 COPY . /var/www/html/
 
-# Ensure Apache listens on PORT assigned by Render (default 10000 or 80)
-RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
-
-# Configure directory permissions for SQLite database and uploads
+# Configure directory permissions for SQLite database and logs
 RUN mkdir -p /var/www/html/database /var/www/html/logs \
     && chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 /var/www/html/database /var/www/html/logs
+    && chmod -R 775 /var/www/html/database /var/www/html/logs \
+    && chmod +x /var/www/html/entrypoint.sh
 
-# Set default Render environment variable
+# Default environment port
 ENV PORT=10000
 
-EXPOSE ${PORT}
+EXPOSE 10000
 
-# Run database migration seeds and start Apache in foreground
-CMD ["sh", "-c", "php database/migrations.php && apache2-foreground"]
+# Execute entrypoint to dynamically bind Render's PORT and launch Apache
+ENTRYPOINT ["/bin/sh", "/var/www/html/entrypoint.sh"]
