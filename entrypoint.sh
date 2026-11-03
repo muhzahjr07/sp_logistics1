@@ -18,3 +18,4 @@ fi
 # Start Apache in foreground
 echo "Starting Apache..."
 exec apache2-foreground
+

@@ -152,3 +152,4 @@ $sitemap_sections = [
 </style>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
+
